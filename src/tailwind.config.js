@@ -12,6 +12,9 @@ tailwind.config = {
 				'gray-violet': 'hsl(273, 4%, 51%)',
 				'light-gray': 'hsl(0, 0%, 98%)',
 			},
+			fontSize: {
+				'4.5xl': '2.5rem',
+			}
 		},
 	}
 }

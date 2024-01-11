@@ -25,9 +25,9 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </head>
-<body>
+<body class="antialiased">
 <header class="w-full max-w-screen-xl mx-auto">
-    <section class="flex justify-between items-center px-5 pt-5 pb-4">
+    <section class="flex justify-between items-center px-5 pt-6 pb-4">
         <a class="pb-2" href="#">
             <img class="object-contain w-full" src="./images/logo.svg" alt="insure logo">
         </a>
@@ -124,126 +124,153 @@
     </section>
 </header>
 <main>
-    <section>
-        <img class="object-cover w-full sm:hidden" src="./images/image-intro-mobile.jpg" alt="family walking on sidewalk">
-        <img class="hidden object-cover w-full sm:block" src="./images/image-intro-desktop.jpg" alt="family walking on sidewalk">
-        <h2>Humanizing your insurance.</h2>
-
-       <p>Get your life insurance coverage easier and faster. We blend our expertise
-          and technology to help you find the plan that’s right for you. Ensure you
-          and your loved ones are protected.</p>
-
-        <button class="border border-white bg-dark-violet w-full py-3 uppercase font-bold text-xl text-white tracking-widest transition ease-in-out duration-300 hover:bg-white hover:text-dark-violet" type="button">View plans</button>
-
-        <img class="object-cover sm:hidden" src="./images/bg-pattern-intro-left-mobile.svg" alt="background lines in waves">
-        <img class="object-cover sm:hidden" src="./images/bg-pattern-intro-right-mobile.svg" alt="background lines in waves">
+    <section class="relative grid bg-violet">
+        <div class="relative">
+            <img class="object-cover w-full sm:hidden" src="./images/image-intro-mobile.jpg" alt="family walking on sidewalk">
+            <img class="hidden object-cover w-full sm:block" src="./images/image-intro-desktop.jpg" alt="family walking on sidewalk">
+        </div>
+        <div class="relative px-4 py-24">
+            <img class="absolute top-0 left-0 object-cover sm:hidden" src="./images/bg-pattern-intro-left-mobile.svg" alt="background lines in waves">
+            <img class="absolute bottom-0 right-0 object-cover -mb-2 translate-y-1/2 sm:hidden" src="./images/bg-pattern-intro-right-mobile.svg" alt="background lines in waves">
+            <div class="relative text-center space-y-5">
+                <h2 class="text-white text-5xl font-heading">Humanizing your insurance.</h2>
+                <p class="text-light-gray leading-relaxed px-2">
+                    Get your life insurance coverage easier and faster. We blend our expertise
+                    and technology to help you find the plan that’s right for you. Ensure you
+                    and your loved ones are protected.
+                </p>
+                <div class="pt-2">
+                    <button class="border border-white bg-violet py-2 px-6 uppercase font-bold text-sm text-white tracking-widest transition ease-in-out duration-300 hover:bg-white hover:text-violet" type="button">View plans</button>
+                </div>
+            </div>
+        </div>
         <img class="hidden object-cover sm:block" src="./images/bg-pattern-intro-left-desktop.svg" alt="background lines in waves">
         <img class="hidden object-cover sm:block" src="./images/bg-pattern-intro-right-desktop.svg" alt="background lines in waves">
     </section>
-    <section>
+    <section class="text-dark-violet pt-3 mt-32">
+        <hr class="w-2/5 border-gray-violet/60 mx-auto"/>
+        <div class="text-center pt-10 space-y-10">
+            <h2 class="text-5xl font-heading">We’re different</h2>
+            <ol class="pt-5 space-y-8">
+                <li class="px-6 py-5 space-y-5 text-center">
+                    <div class="flex justify-center pb-2">
+                        <img src="./images/icon-snappy-process.svg" alt="card icon of lightning bolt">
+                    </div>
+                    <h3 class="text-3xl font-heading">Snappy Process</h3>
 
-        <h2>We’re different</h2>
+                    <p class="text-gray-violet">
+                        Our application process can be completed in minutes, not hours. Don’t get
+                        stuck filling in tedious forms.
+                    </p>
+                </li>
+                <li class="px-6 py-5 space-y-5 text-center">
+                    <div class="flex justify-center pb-2">
+                        <img src="./images/icon-affordable-prices.svg" alt="card icon of dollar sign">
+                    </div>
+                    <h3 class="text-3xl font-heading">Affordable Prices</h3>
 
-        <div>
-            <img src="./images/icon-snappy-process.svg" alt="card icon of lightning bolt">
-            <h3>Snappy Process</h3>
+                    <p class="text-gray-violet">
+                        We don’t want you worrying about high monthly costs. Our prices may be low,
+                        but we still offer the best coverage possible.
+                    </p>
+                </li>
+                <li class="px-6 py-5 space-y-5 text-center">
+                    <div class="flex justify-center pb-2">
+                        <img src="./images/icon-people-first.svg" alt="card icon of person">
+                    </div>
+                    <h3 class="text-3xl font-heading">People First</h3>
 
-        <p>Our application process can be completed in minutes, not hours. Don’t get
-        stuck filling in tedious forms.</p>
-        </div>
-
-        <div>
-            <img src="./images/icon-affordable-prices.svg" alt="card icon of dollar sign">
-            <h3>Affordable Prices</h3>
-
-        <p>We don’t want you worrying about high monthly costs. Our prices may be low,
-        but we still offer the best coverage possible.</p>
-        </div>
-
-        <div>
-            <img src="./images/icon-people-first.svg" alt="card icon of person">
-            <h3>People First</h3>
-
-        <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
-        sure you’re covered when you need it.</p>
+                    <p class="text-gray-violet">
+                        Our plans aren’t full of conditions and clauses to prevent payouts. We make
+                        sure you’re covered when you need it.
+                    </p>
+                </li>
+            </ol>
         </div>
     </section>
 
-    <section>
-        <h2>Find out more about how we work</h2>
-
-        <button class="border border-white bg-dark-violet w-full py-3 uppercase font-bold text-xl text-white tracking-widest transition ease-in-out duration-300 hover:bg-white hover:text-dark-violet" type="button">How we work</button>
-        <img class="object-cover sm:hidden" src="./images/bg-pattern-how-we-work-mobile.svg" alt="background lines in waves">
-        <img class="hidden object-cover sm:block" src="./images/bg-pattern-how-we-work-desktop.svg" alt="background lines in waves">
+    <section class="relative px-5 mt-32">
+        <div class="relative bg-violet text-center">
+            <img class="absolute top-0 right-0 object-cover sm:hidden" src="./images/bg-pattern-how-we-work-mobile.svg" alt="background lines in waves">
+            <img class="hidden object-cover sm:block" src="./images/bg-pattern-how-we-work-desktop.svg" alt="background lines in waves">
+            <div class="relative pt-20 pb-16 px-5">
+                <h2 class="text-white text-4.5xl leading-none tracking-tight font-heading">Find out more about how we work</h2>
+                <div class="mt-8 pt-2">
+                    <button class="border border-white bg-violet py-2 px-6 uppercase font-bold text-sm text-white tracking-widest transition ease-in-out duration-300 hover:bg-white hover:text-violet" type="button">How we work</button>
+                </div>
+            </div>
+        </div>
     </section>
 
 </main>
-<footer>
+<footer class="bg-light-gray mt-32">
   <section class="relative">
       <div class="absolute inset-x-0">
           <img class="object-cover w-full sm:hidden" src="./images/bg-pattern-footer-mobile.svg" alt="background lines in waves">
           <img class="object-cover w-full hidden sm:block" src="./images/bg-pattern-footer-desktop.svg" alt="background lines in waves">
       </div>
-      <div class="relative">
-          <img src="./images/logo.svg" alt="insure logo">
-          <ul>
+      <div class="relative grid place-items-center gap-8 pt-20 pb-10">
+          <div class="pt-2">
+              <img src="./images/logo.svg" alt="insure logo">
+          </div>
+          <ul class="flex items-center gap-4">
               <li>
-                  <a class="block w-6 h-6" href="#">
+                  <a class="block w-6 h-6 text-gray-violet hover:text-dark-violet transition ease-in-out duration-300" href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
                   </a>
               </li>
               <li>
-                  <a class="block w-6 h-6" href="#">
+                  <a class="block w-6 h-5 text-gray-violet hover:text-dark-violet transition ease-in-out duration-300" href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 20"><path fill="currentColor" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
                   </a>
               </li>
               <li>
-                  <a class="block w-6 h-6" href="#">
+                  <a class="block w-7 h-7 text-gray-violet hover:text-dark-violet transition ease-in-out duration-300" href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" xml:space="preserve"><path fill="currentColor" d="M71.9 5.4C35.1 5.4 5.3 35.2 5.3 72c0 28.2 17.5 52.3 42.3 62-.6-5.3-1.1-13.3.2-19.1 1.2-5.2 7.8-33.1 7.8-33.1s-2-4-2-9.9c0-9.3 5.4-16.2 12-16.2 5.7 0 8.4 4.3 8.4 9.4 0 5.7-3.6 14.3-5.5 22.2-1.6 6.6 3.3 12 9.9 12 11.8 0 20.9-12.5 20.9-30.5 0-15.9-11.5-27.1-27.8-27.1-18.9 0-30.1 14.2-30.1 28.9 0 5.7 2.2 11.9 5 15.2.5.7.6 1.2.5 1.9-.5 2.1-1.6 6.6-1.8 7.5-.3 1.2-1 1.5-2.2.9-8.3-3.9-13.5-16-13.5-25.8 0-21 15.3-40.3 44-40.3 23.1 0 41 16.5 41 38.4 0 22.9-14.5 41.4-34.5 41.4-6.7 0-13.1-3.5-15.3-7.6 0 0-3.3 12.7-4.1 15.8-1.5 5.8-5.6 13-8.3 17.5 6.2 1.9 12.8 3 19.7 3 36.8 0 66.6-29.8 66.6-66.6 0-36.7-29.8-66.5-66.6-66.5z"/></svg>
                   </a>
               </li>
               <li>
-                  <a class="block w-6 h-6" href="#">
+                  <a class="block w-6 h-6 text-gray-violet hover:text-dark-violet transition ease-in-out duration-300" href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.56 32.56"><path d="M9.451 0A9.47 9.47 0 0 0 0 9.451v13.668a9.468 9.468 0 0 0 9.451 9.441h13.668a9.468 9.468 0 0 0 9.441-9.451V9.451A9.47 9.47 0 0 0 23.109 0Zm0 2.5h13.658a6.923 6.923 0 0 1 6.946 6.946v13.663a6.921 6.921 0 0 1-6.937 6.946H9.451A6.921 6.921 0 0 1 2.5 23.119V9.451A6.923 6.923 0 0 1 9.451 2.5ZM26.3 5.009a1.252 1.252 0 1 0 1.252 1.252A1.249 1.249 0 0 0 26.3 5.009ZM16.28 7.514a8.766 8.766 0 1 0 8.766 8.766 8.789 8.789 0 0 0-8.766-8.766Zm0 2.5a6.262 6.262 0 1 1-6.262 6.262 6.242 6.242 0 0 1 6.262-6.258Z" fill="currentColor"/></svg>
                   </a>
               </li>
           </ul>
       </div>
   </section>
-  <section>
-    <ol>
+  <section class="relative uppercase font-bold text-sm text-center px-5 pb-1">
+    <ol class="border-t border-gray-violet/30 tracking-wider pt-10 pb-12">
       <li>
-          <span>Our company</span>
-          <ul>
-              <li><a href="#">How we work</a></li>
-              <li><a href="#">Why Insure?</a></li>
-              <li><a href="#">View plans</a></li>
-              <li><a href="#">Reviews</a></li>
+          <span class="text-gray-violet">Our company</span>
+          <ul class="py-8 space-y-3">
+              <li><a class="text-dark-violet" href="#">How we work</a></li>
+              <li><a class="text-dark-violet" href="#">Why Insure?</a></li>
+              <li><a class="text-dark-violet" href="#">View plans</a></li>
+              <li><a class="text-dark-violet" href="#">Reviews</a></li>
           </ul>
       </li>
       <li>
-        <span>Help me</span>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Terms of use</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Cookies</a></li>
+        <span class="text-gray-violet">Help me</span>
+        <ul class="py-8 space-y-3">
+          <li><a class="text-dark-violet" href="#">FAQ</a></li>
+          <li><a class="text-dark-violet" href="#">Terms of use</a></li>
+          <li><a class="text-dark-violet" href="#">Privacy policy</a></li>
+          <li><a class="text-dark-violet" href="#">Cookies</a></li>
         </ul>
       </li>
       <li>
-        <span>Contact</span>
-        <ul>
-          <li><a href="#">Sales</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Live chat</a></li>
+        <span class="text-gray-violet">Contact</span>
+        <ul class="py-8 space-y-3">
+          <li><a class="text-dark-violet" href="#">Sales</a></li>
+          <li><a class="text-dark-violet" href="#">Support</a></li>
+          <li><a class="text-dark-violet" href="#">Live chat</a></li>
         </ul>
       </li>
       <li>
-        <span>Other</span>
-        <ul>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Licenses</a></li>
+        <span class="text-gray-violet">Other</span>
+        <ul class="py-8 space-y-3">
+          <li><a class="text-dark-violet" href="#">Careers</a></li>
+          <li><a class="text-dark-violet" href="#">Press</a></li>
+          <li><a class="text-dark-violet" href="#">Licenses</a></li>
         </ul>
       </li>
     </ol>
